@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --gradient1: linear-gradient(to top left, #757f9a, #d7dde8);
+    --gradient2: linear-gradient(to top left, #ed4264, #ffedbc);
+
+    --background: 238 9.75% 4.24%;
+    --foreground: 238 1.5% 97.65%;
+
+    --muted: 238 7.5% 15.9%;
+    --muted-foreground: 238 1.5% 55.3%;
+
+    --popover: 238 70.25% 53%;
+    --popover-foreground: 238 1.5% 97.65%;
+
+    --card: 238 70.25% 53%;
+    --card-foreground: 238 1.5% 97.65%;
+
+    --border: 238 7.5% 15.9%;
+    --input: 238 7.5% 15.9%;
+
+    --primary: 238 15% 75%;
+    --primary-foreground: 238 1.5% 5.300000000000001%;
+
+    --secondary: 238 7.5% 15.9%;
+    --secondary-foreground: 238 1.5% 97.65%;
+
+    --accent: 238 7.5% 15.9%;
+    --accent-foreground: 238 1.5% 97.65%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 238 1.5% 97.65%;
+
+    --ring: 238 15% 53%;
+    --radius: 0.5rem;
+  }
+
+  .gradient1 {
+    background: var(--gradient1);
+  }
+  .gradient2 {
+    background: var(--gradient2);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #666;
+}
